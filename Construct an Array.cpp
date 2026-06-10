@@ -20,7 +20,10 @@ int main()
     cin >> t;
     while (t--)
     {
-        
+        ll n;
+        cin>>n;
+        fori(i,0,n)cout<<i+1<<" ";
+        cout<<endl;
     }
     return 0;
 }

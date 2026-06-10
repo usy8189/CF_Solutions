@@ -9,7 +9,7 @@
 #define NNN cout<<"NO"<<endl;
 const ll INF = 1e18;
 const ll MOD = 1e9 + 7;
- 
+
 using namespace std;
 
 int main()
@@ -20,7 +20,23 @@ int main()
     cin >> t;
     while (t--)
     {
-        
+        ll n;
+        cin>>n;
+        string s;
+        cin>>s;
+        s=s+s;
+        ll len=0,temp=0;
+        fori(i,0,2*n)
+        {   
+            if (s[i]=='0')temp++;
+            else 
+            {
+                len=max(temp,len);
+                temp=0;
+            }
+        }
+        cout<<len<<endl;
     }
+
     return 0;
 }

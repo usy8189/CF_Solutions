@@ -20,7 +20,22 @@ int main()
     cin >> t;
     while (t--)
     {
-        
+        ll n;
+        cin>>n;
+        vector<ll>a(n);
+        fori(i,0,n)cin>>a[i];
+        sort(a.begin(),a.end());
+        ll temp=a[((n+1)/2)-1];
+        ll l=0,r=0;
+        fori(i,0,((n+1)/2)-1)
+        {
+            if(a[i]!=temp)l++;
+        }
+        fori(i,((n+1)/2)-1,n)
+        {
+            if(a[i]!=temp)r++;
+        }
+       cout<<max(l,r)<<endl;
     }
     return 0;
 }

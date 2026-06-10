@@ -9,7 +9,7 @@
 #define NNN cout<<"NO"<<endl;
 const ll INF = 1e18;
 const ll MOD = 1e9 + 7;
- 
+
 using namespace std;
 
 int main()
@@ -20,7 +20,20 @@ int main()
     cin >> t;
     while (t--)
     {
-        
+        ll n;
+        cin>>n;
+        vector<int>a(n);
+        fori(i,0,n)cin>>a[i];
+        bool same=false;
+        sort(a.begin(), a.end(), greater<int>());
+        fori(i,0,n-1)
+        if(a[i]==a[i+1])same=true;
+        if(same)cout<<-1<<endl;
+        else{
+            fori(i,0,n)cout<<a[i]<<" ";
+            cout<<endl;
+        }
     }
+
     return 0;
 }

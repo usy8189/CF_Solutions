@@ -9,7 +9,7 @@
 #define NNN cout<<"NO"<<endl;
 const ll INF = 1e18;
 const ll MOD = 1e9 + 7;
- 
+
 using namespace std;
 
 int main()
@@ -20,7 +20,23 @@ int main()
     cin >> t;
     while (t--)
     {
-        
+        ll n,m;
+        cin>>n>>m;
+        vector<int>a(n);
+        fori(i,0,n)cin>>a[i];
+        ll count =1,temp=1;
+        fori(i,0,n-1)
+        {   
+            if (a[i]==a[i+1])temp++;
+            else 
+            {
+                temp=1;
+            }
+            count=max(count,temp);
+        }
+        if(count>=m)NNN
+        else YYY
     }
+
     return 0;
 }

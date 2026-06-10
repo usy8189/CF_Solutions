@@ -9,7 +9,7 @@
 #define NNN cout<<"NO"<<endl;
 const ll INF = 1e18;
 const ll MOD = 1e9 + 7;
- 
+
 using namespace std;
 
 int main()
@@ -20,7 +20,10 @@ int main()
     cin >> t;
     while (t--)
     {
-        
+        ll n,k;
+        cin>>n>>k;
+        vector<ll>a(n);
+        vector<ll>
     }
     return 0;
 }
