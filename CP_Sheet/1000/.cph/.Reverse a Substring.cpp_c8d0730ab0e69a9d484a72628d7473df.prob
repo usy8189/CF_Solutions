@@ -1,0 +1,1 @@
+{"name":"Local: Reverse a Substring","url":"e:\\LNMIIT\\Side Quests\\CF\\CP_Sheet\\1000\\Reverse a Substring.cpp","tests":[{"id":1771596541743,"input":"6\naabcfg\n","output":"YES\n2 3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\LNMIIT\\Side Quests\\CF\\CP_Sheet\\1000\\Reverse a Substring.cpp","group":"local","local":true}

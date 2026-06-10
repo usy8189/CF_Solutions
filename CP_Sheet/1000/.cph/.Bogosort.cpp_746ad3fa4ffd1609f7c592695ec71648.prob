@@ -1,0 +1,1 @@
+{"name":"Local: Bogosort","url":"e:\\LNMIIT\\Side Quests\\CF\\CP_Sheet\\1000\\Bogosort.cpp","tests":[{"id":1771183167420,"input":"3\n1\n7\n4\n1 1 3 5\n6\n3 2 1 5 6 4\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\LNMIIT\\Side Quests\\CF\\CP_Sheet\\1000\\Bogosort.cpp","group":"local","local":true}
