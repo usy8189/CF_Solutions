@@ -16,28 +16,30 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    int t;
+    ll t;
     cin >> t;
     while (t--)
-    {
+    {   
         ll n;
         cin>>n;
-        vector<ll>a(n);
-        fori(i,0,n)cin>>a[i];
-        ll l=INT_MIN;
-        fori(i,0,n-1)
-        {
-            ll temp=a[i]-a[i+1];
-            if (temp>l)l=temp;
+        vector<ll>a(n),pre(n+1),preee(n),ans;
+        pre[0]=0;
+        fori(i,0,n){
+        cin>>a[i];
+        pre[i+1]=(pre[i]+a[i]);
+        preee[i]=pre[i+1]/(i+1);
         }
-        bool pussi=true;
-        fori(i,0,n-1)
+        ll mini=INT_MAX;
+        fori(i,0,n)
         {
-            if (a[i]>a[i+1])a[i+1]+=l;
-            if(a[i]>a[i+1])pussi=false;
+            mini=min(mini,preee[i]);
+            ans.push_back(mini);
+        }  
+        for(auto x :ans)
+        {
+            cout<<x<<" ";
         }
-        if(pussi)YYY
-        else NNN        
+        cout<<endl;
     }
     return 0;
 }
