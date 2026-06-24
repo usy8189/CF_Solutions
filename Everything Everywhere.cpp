@@ -20,7 +20,18 @@ int main()
     cin >> t;
     while (t--)
     {   
-       
+       ll n;
+       cin>>n;
+       vector<ll>a(n);
+       fori(i,0,n)cin>>a[i];
+       int ans=0;
+       fori(i,0,n-1)
+       {
+        ll t1=abs(a[i]-a[i+1]);
+        ll t2=__gcd(a[i],a[i+1]);
+        if (t1==t2)ans++;
+       }
+       cout<<ans<<endl;
     }
     return 0;
 }
